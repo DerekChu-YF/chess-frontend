@@ -47,19 +47,19 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
         <Flex justifyContent="space-between" flexDirection={['column', null, null, 'row']}>
           <Flex flex="1" flexDirection="column" mr={['8px', 0]}>
             <Heading as="h1" scale="xxl" color="secondary" mb="24px">
-              {t('Syrup Pools')}
+            {t('Coming Soon')} {/* {t('Syrup Pools')} */}
             </Heading>
-            <Heading scale="md" color="text">
+            {/* <Heading scale="md" color="text">
               {t('Just stake some tokens to earn.')}
             </Heading>
             <Heading scale="md" color="text">
               {t('High APR, low risk.')}
-            </Heading>
+            </Heading> */}
           </Flex>
         </Flex>
       </PageHeader>
       <Page>
-        <PoolControls pools={pools}>
+        {/* <PoolControls pools={pools}>
           {({ chosenPools, viewMode, stakedOnly, normalizedUrlSearch, showFinishedPools }) => (
             <>
               {showFinishedPools && (
@@ -144,7 +144,7 @@ const Pools: React.FC<React.PropsWithChildren> = () => {
               />
             </>
           )}
-        </PoolControls>
+        </PoolControls> */}
       </Page>
     </>
   )

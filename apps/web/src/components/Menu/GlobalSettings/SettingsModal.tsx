@@ -115,11 +115,11 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
               <Text bold textTransform="uppercase" fontSize="18px" color="secondary" mb="24px">
                 {t('Global')}
               </Text>
-              <Flex justifyContent="space-between" mb="24px">
+              {/* <Flex justifyContent="space-between" mb="24px">
                 <Text>{t('Dark mode')}</Text>
                 <ThemeSwitcher isDark={isDark} toggleTheme={() => setTheme(isDark ? 'light' : 'dark')} />
-              </Flex>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
+              </Flex> */}
+              {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Subgraph Health Indicator')}</Text>
                   <QuestionHelper
@@ -138,8 +138,8 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                     setSubgraphHealth(!subgraphHealth)
                   }}
                 />
-              </Flex>
-              <Flex justifyContent="space-between" alignItems="center" mb="24px">
+              </Flex> */}
+              {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                 <Flex alignItems="center">
                   <Text>{t('Show username')}</Text>
                   <QuestionHelper
@@ -156,10 +156,10 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                     setUserUsernameVisibility(!userUsernameVisibility)
                   }}
                 />
-              </Flex>
+              </Flex> */}
               {chainId === ChainId.BSC && (
                 <>
-                  <Flex justifyContent="space-between" alignItems="center" mb="24px">
+                  {/* <Flex justifyContent="space-between" alignItems="center" mb="24px">
                     <Flex alignItems="center">
                       <Text>{t('Token Risk Scanning')}</Text>
                       <QuestionHelper
@@ -189,7 +189,7 @@ const SettingsModal: React.FC<React.PropsWithChildren<InjectedModalProps>> = ({ 
                         setTokenRisk(!tokenRisk)
                       }}
                     />
-                  </Flex>
+                  </Flex> */}
                   <GasSettings />
                 </>
               )}

@@ -91,10 +91,10 @@ const Home: React.FC<React.PropsWithChildren> = () => {
       >
         {account && chainId === ChainId.BSC && (
           <UserBannerWrapper>
-            <UserBanner />
+            {/* <UserBanner /> */}
           </UserBannerWrapper>
         )}
-        <MultipleBanner />
+        {/* qiu  <MultipleBanner /> */}
         <Hero />
       </StyledHeroSection>
       <PageSection
@@ -105,7 +105,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <MetricsSection />
+        {/* <MetricsSection /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -123,7 +123,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         </OuterWedgeWrapper>
         <SalesSection {...swapSectionData(t)} />
       </PageSection>
-      <PageSection
+      {/* <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         background={theme.colors.gradientCardHeader}
         index={2}
@@ -135,9 +135,9 @@ const Home: React.FC<React.PropsWithChildren> = () => {
           </InnerWedgeWrapper>
         </OuterWedgeWrapper>
         <SalesSection {...earnSectionData(t)} />
-        {/* TODO: until we are enable fetch multi-chain farms */}
         {chainId === ChainId.BSC && <FarmsPoolsRow />}
-      </PageSection>
+      </PageSection> */}
+      
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
         containerProps={{
@@ -146,7 +146,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <WinSection />
+        {/* <WinSection /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -155,7 +155,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         hasCurvedDivider={false}
       >
         <SalesSection {...cakeSectionData(t)} />
-        <CakeDataRow />
+        {/* <CakeDataRow /> */}
       </PageSection>
       <PageSection
         innerProps={{ style: HomeSectionContainerStyles }}
@@ -163,7 +163,7 @@ const Home: React.FC<React.PropsWithChildren> = () => {
         index={2}
         hasCurvedDivider={false}
       >
-        <Footer />
+        {/* <Footer /> */}
       </PageSection>
     </>
   )

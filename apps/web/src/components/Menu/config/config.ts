@@ -193,7 +193,7 @@ const config: (
         //   label: t('Voting'),
         //   href: '/voting',
         //   supportChainIds: SUPPORT_ONLY_BSC,
-        //   image: '/images/voting/voting-bunny.png',
+        //   image: '/images/voting/voting-bunny.png', 
         // },
         // {
         //   type: DropdownMenuItemType.DIVIDER,
@@ -221,4 +221,4 @@ const config: (
     },
   ].map((item) => addMenuItemSupported(item, chainId))
 
-export default config
+export default config 
